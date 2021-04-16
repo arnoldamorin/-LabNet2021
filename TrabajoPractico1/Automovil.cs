@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TrabajoPractico1
+{
+    public class Automovil : Transporte
+    { 
+        public Automovil(int pasajeros): base(pasajeros)
+        {
+
+        }
+
+        public override string Avanzar()
+        {
+            throw new NotImplementedException();
+        }
+        public override string Detenerse()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

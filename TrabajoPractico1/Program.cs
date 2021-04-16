@@ -1,0 +1,12 @@
+﻿using System;
+
+namespace TrabajoPractico1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         
+        }
+    }
+}
