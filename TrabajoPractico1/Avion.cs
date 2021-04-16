@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 
 namespace TrabajoPractico1
 {
-    public class Avion : Transporte
+    public class Avion : Transporte, IVolador
     {
-        public Avion(int pasajeros) : base(pasajeros)
+        public Avion(int pasajeros, string name) : base(pasajeros,name)
         {
 
+        }    
+
+        public override void Avanzar()
+        {
+            Console.WriteLine($"El {this.name} esta Avanzando hacia adelante para iniciar el despegue en \n 3 \n 2 \n 1 \n . . .");
+            this.Volar();
+        }
+        public override void Detenerse()
+        {
+            Console.WriteLine("Me detuve");
         }
 
-        public override string Avanzar(int cantidad)
+        public void Volar()
         {
-            throw new NotImplementedException();
-        }
-        public override string Detenerse()
-        {
-            throw new NotImplementedException();
+            Console.WriteLine("Estoy Volando . . .");
         }
     }
 }

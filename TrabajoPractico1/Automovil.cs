@@ -6,20 +6,31 @@ using System.Threading.Tasks;
 
 namespace TrabajoPractico1
 {
-    public class Automovil : Transporte
+    public class Automovil : Transporte, ITocarBocina
     { 
-        public Automovil(int pasajeros): base(pasajeros)
+        public Automovil(int pasajeros, string name): base(pasajeros,name)
         {
 
+        }     
+           
+               
+        public override void Avanzar()
+        {
+            Console.WriteLine($"El {this.name} Avanzando hacia adelante con {this.getPasajeros()} pasajeros");            
         }
 
-        public override string Avanzar()
+        public void TocarBocina()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"La Bocina del {this.name} es: ¡Piii piii!");
         }
-        public override string Detenerse()
+
+        public override void Detenerse()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"El {this.name} detuve");
         }
+
+
+       
+      
     }
 }
