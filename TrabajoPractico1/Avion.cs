@@ -25,7 +25,7 @@ namespace TrabajoPractico1
 
         public void Volar()
         {
-            Console.WriteLine("Estoy Volando . . .");
+            Console.WriteLine($"El {this.name} Esta Volando . . .");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace TrabajoPractico1
             List<Transporte> transportes = new List<Transporte>();
 
             Random rnd = new Random();
-           
+           // Lo resolvi asi por una cuestion estetica de que se vea igual al pdf del TP
             for (int i = 1; i < 6; i++)
             {
                 transportes.Add(new Avion(rnd.Next(40, 100), $"Avión {i}"));              
@@ -25,9 +25,14 @@ namespace TrabajoPractico1
             {
                 Console.WriteLine($"{item.name}: { item.getPasajeros()} pasajeros");                
             }
+
+            //Ejemplo de uso de las interfaces
             Automovil automovil6 = new Automovil(rnd.Next(1, 5), "Automóvil 6");
             automovil6.TocarBocina();
-            Console.ReadLine();            
+            
+            Avion avion6 = new Avion(rnd.Next(20, 100), "Avión 5");
+            avion6.Volar();
+            
             
         }
     }
