@@ -19,18 +19,18 @@ namespace TrabajoPractico1
             Console.WriteLine($"El {this.name} Avanzando hacia adelante con {this.getPasajeros()} pasajeros");            
         }
 
-        public void TocarBocina()
-        {
-            Console.WriteLine($"La Bocina del {this.name} es: ¡Piii piii!");
-        }
+       
 
         public override void Detenerse()
         {
             Console.WriteLine($"El {this.name} detuve");
         }
+        public void TocarBocina()
+        {
+            Console.WriteLine($"La Bocina del {this.name} es: ¡Piii piii!");
+        }
 
 
-       
-      
+
     }
 }
