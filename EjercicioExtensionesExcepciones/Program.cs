@@ -30,6 +30,8 @@ namespace EjercicioExtensionesExcepciones
                 finally
                 {
                     Console.WriteLine("-----La operacion ha finalizado-----");
+                    Console.WriteLine("pulse cualquier tecla para continuar");
+                    Console.ReadKey();
                 }
                 Console.WriteLine("***********  Ejercicio 2  ***********");
                 try
@@ -50,6 +52,12 @@ namespace EjercicioExtensionesExcepciones
                     Console.WriteLine("La operacion no ha sido exitosa, seguro no ingreso nada o una letra");
                     Console.WriteLine($"Mensaje: {ex.Message}");
                 }
+                finally
+                {
+                    Console.WriteLine("-----La operacion ha finalizado-----");
+                    Console.WriteLine("pulse cualquier tecla para continuar");
+                    Console.ReadKey();
+                }
                 Console.WriteLine("***********  Ejercicio 3  ***********");
 
                 try
@@ -60,6 +68,12 @@ namespace EjercicioExtensionesExcepciones
                 {
                     Console.WriteLine($"Mensaje: {ex.Message}");
                     Console.WriteLine($"Type: {ex.GetType()}");
+                }
+                finally
+                {
+                    Console.WriteLine("-----La operacion ha finalizado-----");
+                    Console.WriteLine("pulse cualquier tecla para continuar");
+                    Console.ReadKey();
                 }
 
                 Console.WriteLine("***********  Ejercicio 4  ***********");
@@ -73,7 +87,13 @@ namespace EjercicioExtensionesExcepciones
                     Console.WriteLine();
                     MessageBox.Show($"{ex.Message}","Exception Message");
                 }
-            Console.ReadKey();
+                finally
+                {
+                    Console.WriteLine("-----La operacion ha finalizado-----");
+                    Console.WriteLine("pulse cualquier tecla para continuar");
+                    Console.ReadKey();
+                }
+            
             }
         }
     }
