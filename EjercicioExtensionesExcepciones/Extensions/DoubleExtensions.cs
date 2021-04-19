@@ -10,7 +10,14 @@ namespace EjercicioExtensionesExcepciones.Extensions
     {
         public static double Dividir(this double i, double j)
         {
-            return i / j;
+            if (j == 0)
+            {
+                throw new DivideByZeroException();
+            }
+            else
+            {
+                return i / j;
+            }
         }
     }
 }

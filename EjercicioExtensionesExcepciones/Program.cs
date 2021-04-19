@@ -20,16 +20,16 @@ namespace EjercicioExtensionesExcepciones
                 {
                     Console.WriteLine("Ingrese un valor");
                     int i = Convert.ToInt32(Console.ReadLine());
-                    int dividir = i / 0;
+                    int dividir = i.Dividir(0);                    
                     Console.WriteLine($"División exitosa, el resultado es : {dividir}");
                 }
-                catch (DivideByZeroException)
+                catch (Exception ex)
                 {
-                    Console.WriteLine("La operacion no ha sido exitosa, No se puede dividir por cero");
+                    Console.WriteLine($"La operacion no ha sido exitosa, Mensaje de la excepcion: {ex.Message}");
                 }
                 finally
                 {
-                    Console.WriteLine("La operacion ha finalizado");
+                    Console.WriteLine("-----La operacion ha finalizado-----");
                 }
                 Console.WriteLine("***********  Ejercicio 2  ***********");
                 try
@@ -37,15 +37,8 @@ namespace EjercicioExtensionesExcepciones
                     Console.WriteLine("Ingrese el dividendo");
                     double i = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Ingrese el divisor");
-                    double j = Convert.ToDouble(Console.ReadLine());
-                    if (j == 0)
-                {   // si el divisor es 0 convierto el dividendo en int y lo divido por 0 porque en double dividir por 0 da infinito y no salta la excepcion
-                    int h = Convert.ToInt32(i)/0;                        
-                    }
-                    else
-                    {
-                        Console.WriteLine($"El resultado es : {i.Dividir(j)}");
-                    }
+                    double j = Convert.ToDouble(Console.ReadLine());                                   
+                    Console.WriteLine($"El resultado es : {i.Dividir(j)}");                    
                 }
                 catch (DivideByZeroException ex)
                 {
@@ -73,12 +66,12 @@ namespace EjercicioExtensionesExcepciones
 
                 try
                 {
-                    Logic.ThrowCustomException();
+                Logic.Ejercicio4();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine();
-                    MessageBox.Show($"A continuación un mensaje: {ex.Message}","Exception Message");
+                    MessageBox.Show($"{ex.Message}","Exception Message");
                 }
             Console.ReadKey();
             }

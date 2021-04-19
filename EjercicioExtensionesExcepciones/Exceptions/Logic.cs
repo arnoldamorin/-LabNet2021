@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EjercicioExtensionesExcepciones.Extensions;
 
 namespace EjercicioExtensionesExcepciones.Exceptions
 {
@@ -10,13 +11,17 @@ namespace EjercicioExtensionesExcepciones.Exceptions
     {
         public static void Ejercicio3()
         {
-            DateTime? fechaConValorNull = null;
-            string fechaFormateada = fechaConValorNull.Value.ToString("MM/yy");
+            var numeros = new List<int>() { 1, 2, 3, 4, 5 };
+            foreach (var n in numeros)
+            {
+                int cuadrado = n.AlCuadrado();                
+                numeros.Add(cuadrado);
+            }
         }
 
-        public static void ThrowCustomException()
+        public static void Ejercicio4()
         {
-            throw new CustomException();
+            throw new CustomException("Mensaje personalizado");
         }
     }
 }

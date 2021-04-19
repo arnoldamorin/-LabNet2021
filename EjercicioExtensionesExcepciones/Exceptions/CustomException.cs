@@ -8,8 +8,8 @@ namespace EjercicioExtensionesExcepciones.Exceptions
 {
     public class CustomException : Exception
     {
-
-        public CustomException() : base("This is a message from the CustomException")
+        
+        public CustomException(string message) : base("Mensaje base de la Custom Exception: "+message)
         {
 
         }
