@@ -38,6 +38,8 @@ namespace TrabajoPractico1
             Avion avion6 = new Avion(rnd.Next(20, 100), "Avión 5");
             avion6.Volar();
 
+            Console.ReadKey();
 
         }
     }
+}

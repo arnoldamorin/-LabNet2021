@@ -1,0 +1,7 @@
+C:\Users\disenio.LOCAL\source\repos\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.csprojAssemblyReference.cache
+C:\Users\disenio.LOCAL\source\repos\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.csproj.CoreCompileInputs.cache
+C:\Users\disenio.LOCAL\source\repos\TrabajoPractico1\TrabajoPractico1\bin\Debug\TrabajoPractico1.exe.config
+C:\Users\disenio.LOCAL\source\repos\TrabajoPractico1\TrabajoPractico1\bin\Debug\TrabajoPractico1.exe
+C:\Users\disenio.LOCAL\source\repos\TrabajoPractico1\TrabajoPractico1\bin\Debug\TrabajoPractico1.pdb
+C:\Users\disenio.LOCAL\source\repos\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.exe
+C:\Users\disenio.LOCAL\source\repos\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.pdb
