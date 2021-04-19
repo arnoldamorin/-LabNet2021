@@ -1,0 +1,7 @@
+C:\Users\disenio.LOCAL\Source\Repos\-LabNet2021\EjercicioExtensionesExcepciones\bin\Debug\EjercicioExtensionesExcepciones.exe.config
+C:\Users\disenio.LOCAL\Source\Repos\-LabNet2021\EjercicioExtensionesExcepciones\bin\Debug\EjercicioExtensionesExcepciones.exe
+C:\Users\disenio.LOCAL\Source\Repos\-LabNet2021\EjercicioExtensionesExcepciones\bin\Debug\EjercicioExtensionesExcepciones.pdb
+C:\Users\disenio.LOCAL\Source\Repos\-LabNet2021\EjercicioExtensionesExcepciones\obj\Debug\EjercicioExtensionesExcepciones.csprojAssemblyReference.cache
+C:\Users\disenio.LOCAL\Source\Repos\-LabNet2021\EjercicioExtensionesExcepciones\obj\Debug\EjercicioExtensionesExcepciones.csproj.CoreCompileInputs.cache
+C:\Users\disenio.LOCAL\Source\Repos\-LabNet2021\EjercicioExtensionesExcepciones\obj\Debug\EjercicioExtensionesExcepciones.exe
+C:\Users\disenio.LOCAL\Source\Repos\-LabNet2021\EjercicioExtensionesExcepciones\obj\Debug\EjercicioExtensionesExcepciones.pdb
