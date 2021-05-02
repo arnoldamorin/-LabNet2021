@@ -40,18 +40,10 @@ namespace Lab.Practica.EF.UI
             //}
             //Console.ReadKey();
             #endregion
-            ShippersLogic shippersLogic = new ShippersLogic();
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine("{0,5} {1,5} {2,20}", "Id", "Compañia", "Telefono");
-            foreach (Shippers shippers in shippersLogic.GetAll())
-            {
-                Console.WriteLine("{0,5} {1,5} {2,20}", shippers.ShipperID, shippers.CompanyName, shippers.Phone);
-            }
-            Console.WriteLine("Presione una tecla para continuar");
-            Console.ReadKey();
-            //Menu menuPrincipal = new Menu();
 
-            //menuPrincipal.MenuPrincipal();
+            Menu menuPrincipal = new Menu();
+
+            menuPrincipal.MenuPrincipal();
         }
     }
 }
