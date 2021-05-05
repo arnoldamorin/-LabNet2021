@@ -1,0 +1,79 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #E20000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    background-image: url(../images/fondo-contacto.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn {
+    background-color: #370A6D;
+    color: white;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #370A6D;
+}
+
+.Otro,
+.Masculino,
+.Femenino {
+    color: gray;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.Labels {
+    color: gray;
+    font-size: 18px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 30px;
+    color: #E20000;
+    text-align: center;
+}
+
+.Subtitles {
+    color: gray;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.fondoform {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+span {
+    font-size: 12px;
+}
+
+.respuesta {
+    text-align: center;
+}
