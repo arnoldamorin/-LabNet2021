@@ -1,0 +1,46 @@
+﻿@model Lab.Practica.MVC.Models.TerritoriesView
+@{
+    ViewBag.Title = "Territories";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>@ViewBag.Message Territory <i class="fa fa-globe" style="color:red"></i></h1>
+
+        </div>
+    </div>
+    @using (Html.BeginForm($"{ViewBag.Message}", "Territories", FormMethod.Post))
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-success" value="Save" type="submit">Save</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    @Html.LabelFor(t => t.TerritoryID)
+                    @Html.TextBoxFor(t => t.TerritoryID, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(t => t.TerritoryID, null, new { @style = "color:red" })
+                </div>
+                <div>
+                    @Html.LabelFor(t => t.TerritoryDescription)
+                    @Html.TextBoxFor(t => t.TerritoryDescription, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(t => t.TerritoryDescription, null, new { @style = "color:red" })
+                </div>
+                <div>
+                    @Html.LabelFor(t => t.RegionID)
+                    @Html.TextBoxFor(t => t.RegionID, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(t => t.RegionID, null, new { @style = "color:red" })
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<script type="text/javascript">
+    window.onload = function readOnly() {
+        if (document.getElementById('TerritoryID').value > 0) {
+            document.getElementById('TerritoryID').readOnly = true;
+        }   
+  }
+</script>
