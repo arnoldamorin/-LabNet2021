@@ -1,0 +1,44 @@
+﻿@model List<Lab.Practica.MVC.Models.TerritoriesView>
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>List of Territories</h1>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12">
+            @Html.ActionLink("New", "Insert", null, new { @class = "btn btn-success" })
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <table id="dtBasicExample" class="table table-striped table-bordered table-sm">
+            <thead>
+                <tr>
+                    <th class="th-sm">Id</th>
+                    <th class="th-sm">Description</th>
+                    <th class="th-sm">Region Id</th>
+                    <th class="th-sm">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var territories in Model)
+                {
+                    <tr>
+                        <th scope="row">@territories.TerritoryID</th>
+                        <th>@territories.TerritoryDescription</th>
+                        <th>@territories.RegionID</th>
+                        <th id="@territories.TerritoryID">
+                            @Html.ActionLink("Delete", "Delete", new { id = territories.TerritoryID }, new { @class = "btn btn-danger", onclick = "return confirm('Are you sure?')" })
+                            @Html.ActionLink("Edit", "Edit", new { id = territories.TerritoryID }, new { @class = "btn btn-primary" })
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

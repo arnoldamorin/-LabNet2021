@@ -1,0 +1,39 @@
+﻿@model Lab.Practica.MVC.Models.ShippersView
+@{ 
+    ViewBag.Title = "Shippers";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>@ViewBag.Message Shipper  <i class="fa fa-truck" style="color:red"></i></h1>
+           
+        </div>
+    </div>
+    @using (Html.BeginForm($"{ViewBag.Message}", "Shippers", FormMethod.Post))
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-success" value="Save" type="submit">Save</button>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    @Html.LabelFor(s => s.ShipperID)
+                    @Html.TextBoxFor(s => s.ShipperID, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(s => s.ShipperID, null, new { @style = "color:red" })
+                </div>
+                <div>
+                    @Html.LabelFor(s => s.CompanyName)
+                    @Html.TextBoxFor(s => s.CompanyName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(s => s.CompanyName, null, new { @style = "color:red" })
+                </div>
+                <div>
+                    @Html.LabelFor(s => s.Phone)
+                    @Html.TextBoxFor(s => s.Phone, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(s => s.Phone, null, new { @style = "color:red" })
+                </div>
+            </div>
+        </div>
+    }
+</div>
