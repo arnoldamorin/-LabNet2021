@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Practica.Entities", "La
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab.Practica.Logic", "Lab.Practica.Logic\Lab.Practica.Logic.csproj", "{9FAF2A8D-FE2F-43A9-9F3D-DDA1276C0EBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCrudAPi", "MVCCrudAPi\MVCCrudAPi.csproj", "{99C681DF-F83E-42A7-BB22-479D168027BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9FAF2A8D-FE2F-43A9-9F3D-DDA1276C0EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FAF2A8D-FE2F-43A9-9F3D-DDA1276C0EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FAF2A8D-FE2F-43A9-9F3D-DDA1276C0EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C681DF-F83E-42A7-BB22-479D168027BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C681DF-F83E-42A7-BB22-479D168027BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C681DF-F83E-42A7-BB22-479D168027BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C681DF-F83E-42A7-BB22-479D168027BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
