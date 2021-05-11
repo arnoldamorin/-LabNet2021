@@ -1,10 +1,15 @@
-﻿ using System;
+﻿using Lab.Practica.MVC.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace Lab.Practica.MVC.Controllers
 {
@@ -12,24 +17,13 @@ namespace Lab.Practica.MVC.Controllers
     {
         public async Task<ActionResult> Index()
         {
+            PublicApiView cotizacion = new PublicApiView();
             var httpClient = new HttpClient();
-            var json = await httpClient.GetStringAsync("https://pokeapi.co/api/v2/pokemon/torchic");
+            var json = await httpClient.GetStringAsync("https://api-dolar-argentina.herokuapp.com/api/dolaroficial");
 
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+            cotizacion = JsonConvert.DeserializeObject<PublicApiView>(json);
+            
+            return View(cotizacion);
+        }      
     }
 }
