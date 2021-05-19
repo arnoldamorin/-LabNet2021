@@ -1,0 +1,23 @@
+<div class="card-body">
+    <h2>List of Shippers</h2>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Company Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let shipper of shippersList">
+            <td>{{shipper.ShipperID}}</td>
+            <td>{{shipper.CompanyName}}</td>
+            <td>{{shipper.Phone}}</td>
+            <td><button (click)="Edit(shipper)" class="btn btn-warning" [routerLink]="['/']">Edit</button></td>
+            <td><button (click)="Delete(shipper.ShipperID)" class="btn btn-danger ml-4">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
